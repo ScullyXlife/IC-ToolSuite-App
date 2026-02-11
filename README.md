@@ -1,6 +1,6 @@
 # IC ToolSuite App Releases
 
-This repository hosts the public Windows installers for IC ToolSuite.
+This repository hosts the public Windows and Linux installers for IC ToolSuite.
 
 ## What It Is
 
@@ -19,6 +19,18 @@ optional Nitrado API and FTP helpers to speed up uploads.
 	- Firefox: click Allow download.
 4. If Windows SmartScreen blocks it:
 	- Click More info, then Run anyway.
+
+## Download And Install (Linux)
+
+1. Open the Releases page and pick the version you want.
+2. Download the Debian package:
+	- IC ToolSuite_*_amd64.deb
+3. Install it with:
+
+```bash
+sudo dpkg -i "IC ToolSuite_*_amd64.deb"
+sudo apt -f install -y
+```
 
 ## Updates
 
