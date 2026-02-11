@@ -38,4 +38,5 @@ Notes:
 ## Support
 
 If you have trouble installing or updating, open an issue in the main project repo.
+You can also join the support Discord: https://discord.gg/Qy7jUCPT
 
