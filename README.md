@@ -1,31 +1,71 @@
-# IC ToolSuite App Releases
+# Iron Chronicle Tool Suite
 
-This repository hosts the public Windows and Linux installers for IC ToolSuite.
+**The Definitive Console DayZ Admin Toolkit (Nitrado-Focused)**
 
-## What It Is
+Cross-platform (Windows + Linux) desktop toolkit built by an active DayZ server owner to eliminate manual XML headaches for console admins.
 
-IC ToolSuite is a desktop app that bundles interactive configuration tools for DayZ server admins.
-It includes editors for gameplay, types, weather, spawnable types, and other server files, plus
-optional Nitrado API and FTP helpers to speed up uploads.
+Open-source (MIT) and built for the DayZ console admin community.
 
-## Download And Install (Windows)
+Not affiliated with Bohemia Interactive or Nitrado.
 
-1. Open the Releases page and pick the version you want.
-2. Download one of these installers:
-	- NSIS: IC ToolSuite_*_x64-setup.exe
-	- MSI:  IC ToolSuite_*_x64_en-US.msi
-3. If the browser warns about an unknown download:
-	- Edge/Chrome: click Keep or Keep anyway.
-	- Firefox: click Allow download.
-4. If Windows SmartScreen blocks it:
-	- Click More info, then Run anyway.
+## Why This Exists
 
-## Download And Install (Linux)
+Console DayZ admins are forced to:
 
-1. Open the Releases page and pick the version you want.
-2. Download the Debian package:
-	- IC ToolSuite_*_amd64.deb
-3. Install it with:
+- Manually edit XML
+- Balance the CE blindly
+- Guess at RPT errors
+- Fight unreliable file uploads
+- Work around Nitrado quirks
+
+Iron Chronicle Tool Suite was built to fix that.
+
+## Core Capabilities (High-Level)
+
+- Full Nitrado API integration (service-scoped long-life token)
+- Guided XML & JSON editors (guardrails + export + upload)
+- Drag-and-drop map visualizers (spawn points, event spawns, territories)
+- CE balancing surfaces (types, limits library, globals, spawnable types)
+- RPT log analysis (common pattern detection)
+- Upload strategy controller (API + FTP fallback)
+- Cross-tool Limits library integration (shared categories/tags/usage/value)
+- Automatic updates (in-app updater)
+
+Full details live here:
+
+- Full Feature Breakdown: [TOOL-FEATURES.md](TOOL-FEATURES.md)
+
+## What Makes This Different
+
+- Built specifically for console servers
+- Designed around Nitrado limitations (and the failure modes console admins actually hit)
+- Real-world server-tested workflows
+- Guardrails that help prevent economy-breaking mistakes
+- Structured validation where possible (schemas / known-safe constraints)
+- Designed by someone who runs servers, not just edits files
+
+## Installation
+
+This repo contains the app source and tool pages. End-user installers are published in a separate releases repo.
+
+### Download
+
+Get the latest installers from the IC-ToolSuite-App releases:
+
+https://github.com/ScullyXlife/IC-ToolSuite-App/releases
+
+### Windows install
+
+1. Download one of these files:
+   - `IC.ToolSuite_*_x64-setup.exe` (NSIS)
+   - `IC.ToolSuite_*_x64_en-US.msi` (MSI)
+2. Run the installer and follow the prompts.
+3. If Windows SmartScreen warns you, choose "More info" then "Run anyway."
+
+### Linux install (deb)
+
+1. Download `IC ToolSuite_*_amd64.deb` from the releases page.
+2. Install it with:
 
 ```bash
 sudo dpkg -i "IC ToolSuite_*_amd64.deb"
@@ -34,21 +74,65 @@ sudo apt -f install -y
 
 ## Updates
 
-Use Settings -> App Updates inside the app to check, download, and install updates.
+Use Settings → App Updates inside the app to check and install updates.
 
-## Nitrado Access Requirements
+## Nitrado Token Setup (Required)
 
-To use the Nitrado features:
-- Long-life token (from your Nitrado account settings)
-- Service ID for the server you want to manage
-- FTP host, user, password, and port from the Nitrado web panel
+IC Tool Suite only needs a **single long-life Nitrado API token**.
 
-Notes:
-- Tokens and FTP credentials are stored locally on your machine.
-- No credentials are uploaded to any external service by this app.
+- For most operations you do **not** need FTP host/user/password in IC Tool Suite.
+- If Nitrado `file_server/upload` is unreliable for your service (common on some console servers), IC Tool Suite can use **FTP upload fallback**. Configure it in Settings → Nitrado Controller.
+- Add your token in Settings → Nitrado Tokens, then click Load Services and select your server.
+
+On the Nitrado long-life token page, enable this scope:
+
+- **service**
+
+That is the scope IC Tool Suite uses for service listing and file-server operations.
+
+You can leave these unchecked unless you need them for other tools/scripts:
+
+- `rootserver`
+- `ssh_keys`
+- `service_order`
+- `user_edit`
+- `user_info`
+
+With `service` enabled, the token covers these API paths used by the app:
+
+- `/services`
+- `/services/{id}/gameservers/file_server`
+- `/services/{id}/gameservers/file_server/list`
+- `/services/{id}/gameservers/file_server/download`
+- `/services/{id}/gameservers/file_server/upload`
+
+## Nitrado Controller (Recommended)
+
+In Settings → Nitrado Controller, choose an upload strategy:
+
+- **Auto (default):** API upload first, then FTP fallback if upload fails
+- **API:** force API upload
+- **FTP:** force FTP upload
+
+## Roadmap
+
+Roadmap and long-term direction:
+
+- [ROADMAP.md](ROADMAP.md)
 
 ## Support
 
-If you have trouble installing or updating, open an issue in the main project repo.
-You can also join the support Discord: https://discord.gg/Qy7jUCPT
+Discord support: https://discord.gg/nPugvHKhsk
 
+## Donations (Optional)
+
+If IC Tool Suite saves you time, donations help fund development, testing, and release costs (no paywalls):
+
+https://buy.stripe.com/9B6dRbbrp0Ly1y58aRgYU05
+
+## License + Disclaimer
+
+- License: MIT (see [LICENSE](LICENSE))
+- Not affiliated with Bohemia Interactive or Nitrado
+- No paywalls, no API resale (optional donations are welcome)
+- Privacy: no analytics/telemetry (see [PRIVACY.md](PRIVACY.md))
