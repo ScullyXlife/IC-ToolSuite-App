@@ -114,12 +114,6 @@ In Settings → Nitrado Controller, choose an upload strategy:
 - **API:** force API upload
 - **FTP:** force FTP upload
 
-## Roadmap
-
-Roadmap and long-term direction:
-
-- [ROADMAP.md](ROADMAP.md)
-
 ## Support
 
 Discord support: https://discord.gg/nPugvHKhsk
