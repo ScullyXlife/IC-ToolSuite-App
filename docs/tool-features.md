@@ -1,6 +1,6 @@
 # Tool Features List
 
-[Home](./index.md) · [Tool Features](./tool-features.md) · [Support Discord](https://discord.gg/nPugvHKhsk)
+[Home](./index.html) · [Tool Features](./tool-features.md) · [Support Discord](https://discord.gg/nPugvHKhsk)
 
 Effective date: 2026-02-17
 
@@ -269,4 +269,4 @@ File: [tools/TOOL_TEMPLATE.html](../tools/TOOL_TEMPLATE.html)
 
 ---
 
-[Back to Home](./index.md) · [Support Discord](https://discord.gg/nPugvHKhsk)
+[Back to Home](./index.html) · [Support Discord](https://discord.gg/nPugvHKhsk)
