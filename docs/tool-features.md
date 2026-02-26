@@ -1,5 +1,7 @@
 # Tool Features List
 
+[Home](./index.md) · [Tool Features](./tool-features.md) · [Support Discord](https://discord.gg/nPugvHKhsk)
+
 Effective date: 2026-02-17
 
 This document summarizes the user-facing features of every tool page in the tools directory.
@@ -264,3 +266,7 @@ File: [tools/TOOL_TEMPLATE.html](../tools/TOOL_TEMPLATE.html)
 
 - Baseline page scaffold for adding new tools (layout, styling, navigation)
 - Includes shared UI baseline script and Nitrado proxy hook
+
+---
+
+[Back to Home](./index.md) · [Support Discord](https://discord.gg/nPugvHKhsk)
