@@ -4,7 +4,7 @@
 
 Cross-platform (Windows + Linux) desktop toolkit built by an active DayZ server owner to eliminate manual XML headaches for console admins.
 
-Open-source (MIT) and built for the DayZ console admin community.
+Closed-source for now and built for the DayZ console admin community.
 
 Not affiliated with Bohemia Interactive or Nitrado.
 
@@ -46,7 +46,7 @@ Full details live here:
 
 ## Installation
 
-This repo contains the app source and tool pages. End-user installers are published in a separate releases repo.
+This repo contains the app project and tool pages. End-user installers are published in a separate releases repo.
 
 ### Download
 
@@ -114,9 +114,38 @@ In Settings → Nitrado Controller, choose an upload strategy:
 - **API:** force API upload
 - **FTP:** force FTP upload
 
+## Roadmap
+
+Roadmap and long-term direction:
+
+- [ROADMAP.md](ROADMAP.md)
+
 ## Support
 
 Discord support: https://discord.gg/nPugvHKhsk
+
+## Security + Privacy Transparency
+
+This app is designed to work without a custom backend.
+
+What it accesses:
+
+- Nitrado API + Nitrado file server endpoints (only when you connect a token and initiate actions)
+- GitHub release metadata (updater checks, depending on build/workflow)
+
+What it stores (local only):
+
+- Your app settings and any tokens/FTP settings you choose to save
+
+What it does NOT do:
+
+- No analytics/telemetry
+- No ads
+- No hidden remote server collecting data
+
+Details: see [PRIVACY.md](PRIVACY.md).
+
+More detail (architecture + data handling): see [SECURITY.md](SECURITY.md).
 
 ## Donations (Optional)
 
@@ -126,7 +155,12 @@ https://buy.stripe.com/9B6dRbbrp0Ly1y58aRgYU05
 
 ## License + Disclaimer
 
-- License: MIT (see [LICENSE](LICENSE))
+- License: Binary EULA for official releases (see [LICENSE](LICENSE))
 - Not affiliated with Bohemia Interactive or Nitrado
 - No paywalls, no API resale (optional donations are welcome)
 - Privacy: no analytics/telemetry (see [PRIVACY.md](PRIVACY.md))
+
+## Release Integrity
+
+- Release builds are signed.
+- Release assets include SHA-256 checksum hashes.

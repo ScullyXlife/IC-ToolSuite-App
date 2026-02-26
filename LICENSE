@@ -1,21 +1,90 @@
-MIT License
+IRON CHRONICLE TOOL SUITE (IC-TOOLSUITE)
+END USER LICENSE AGREEMENT (BINARY RELEASES)
 
-Copyright (c) 2026 Iron Chronicle
+Effective date: 2026-02-20
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Copyright (c) 2026 Iron Chronicle. All rights reserved.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+This End User License Agreement ("EULA") governs your use of the official
+prebuilt binary releases of Iron Chronicle Tool Suite ("IC ToolSuite").
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+By downloading, installing, or using IC ToolSuite, you agree to this EULA.
+
+1) Definitions
+
+- "Software" means the IC ToolSuite application and the tool pages/assets
+	shipped with it.
+- "Binary Release" means an official installer/bundle published by the
+	project maintainers (typically via GitHub Releases) and its associated
+	signature/checksum files.
+- "Source Code" means any human-readable source files (including, but not
+	limited to, HTML/JS/CSS source, Rust source, scripts, and build files).
+
+2) License Grant (Binary Releases)
+
+Subject to this EULA, you are granted a non-exclusive, non-transferable,
+revocable license to:
+
+- Download and install the Software from official Binary Releases.
+- Run and use the Software for your own personal or internal server
+	administration purposes.
+- Make a reasonable number of backup copies of the Binary Release for your own
+	archival purposes.
+
+3) Restrictions
+
+Unless you have explicit written permission from Iron Chronicle, you may not:
+
+- Copy, modify, publish, redistribute, sell, sublicense, or otherwise
+	distribute the Software or any portion of it.
+- Reverse engineer, decompile, disassemble, or attempt to derive source code
+	from the Software, except to the extent such restriction is prohibited by
+	applicable law.
+- Remove or alter copyright, trademark, or other proprietary notices.
+
+4) Source Code
+
+This repository's Source Code is not being licensed to you under an open-source
+license. Access to the Source Code (if you have it) does not grant permission
+to copy, modify, or redistribute it.
+
+5) Updates
+
+The Software may check for updates and/or download release metadata from GitHub
+as part of the update mechanism (depending on the build/workflow). You can
+choose whether to install updates.
+
+6) Third-Party Services
+
+The Software may communicate with third-party services when you choose to use
+features that require them (for example: Nitrado API operations and file
+upload/download you initiate).
+
+7) Privacy
+
+Privacy details are described in PRIVACY.md (and the in-app Legal & Privacy
+page). This EULA does not replace that policy.
+
+8) Termination
+
+This EULA is effective until terminated. Your rights under this EULA terminate
+automatically if you breach it. Upon termination, you must stop using the
+Software.
+
+9) Disclaimer
+
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+10) Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+11) Contact
+
+Support is provided via the project's official support channels (for example,
+the support Discord linked in the README).
