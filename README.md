@@ -46,7 +46,7 @@ Full details live here:
 
 ## Installation
 
-This repo contains the app project and tool pages. End-user installers are published in a separate releases repo.
+This repo contains the End-user installers.
 
 ### Download
 
