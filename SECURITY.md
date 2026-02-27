@@ -8,9 +8,9 @@ This document explains how IC ToolSuite is packaged, what it accesses, what it s
 
 - IC ToolSuite is a desktop app built with Tauri.
 - The UI is a set of local tool pages (HTML/JS/CSS) bundled into the app.
-- There is no project-operated backend server.
+- Account/session features use a project-operated auth service.
 
-In practical terms: the app runs locally, loads local tool pages, and only talks to third-party services when you explicitly use features that require them.
+In practical terms: the app runs locally, loads local tool pages, and only talks to configured services (Nitrado, GitHub release metadata, and auth service) when you explicitly use features that require them.
 
 ## What the app stores (local only)
 
@@ -34,6 +34,7 @@ The app only makes network requests to:
 
 - Nitrado services you connect to (API calls and file upload/download actions you initiate)
 - GitHub release endpoints used by the updater (release metadata), depending on build/workflow
+- IC ToolSuite auth service endpoints for account registration/sign-in/session/device linking
 
 IC ToolSuite does not send analytics/telemetry.
 
@@ -41,7 +42,7 @@ IC ToolSuite does not send analytics/telemetry.
 
 - No analytics/telemetry
 - No advertising identifiers
-- No background “phone home” server
+- No hidden “phone home” server beyond documented service endpoints
 - No reading browser history or browser saved passwords
 - No keystroke logging
 

@@ -54,6 +54,8 @@ Get the latest installers from the IC-ToolSuite-App releases:
 
 https://github.com/ScullyXlife/IC-ToolSuite-App/releases
 
+Desktop stable and Android beta artifacts are both published from the same releases feed.
+
 ### Windows install
 
 1. Download one of these files:
@@ -71,6 +73,13 @@ https://github.com/ScullyXlife/IC-ToolSuite-App/releases
 sudo dpkg -i "IC ToolSuite_*_amd64.deb"
 sudo apt -f install -y
 ```
+
+### Android beta (APK/AAB)
+
+1. Open the same releases page above.
+2. Download the latest Android beta asset (`.apk` and/or `.aab` when provided).
+3. Install on Android ARM64 devices.
+4. If installing an APK manually, allow install from unknown sources for the browser/file manager you used.
 
 ## Updates
 
@@ -136,12 +145,13 @@ Discord support: https://discord.gg/nPugvHKhsk
 
 ## Security + Privacy Transparency
 
-This app is designed to work without a custom backend.
+IC ToolSuite primarily runs locally, and now includes an IC account/auth backend for account registration, session management, and device linking.
 
 What it accesses:
 
 - Nitrado API + Nitrado file server endpoints (only when you connect a token and initiate actions)
 - GitHub release metadata (updater checks, depending on build/workflow)
+- IC ToolSuite auth service endpoints (account registration/sign-in/session/link actions)
 
 What it stores (local only):
 
@@ -151,7 +161,7 @@ What it does NOT do:
 
 - No analytics/telemetry
 - No ads
-- No hidden remote server collecting data
+- No hidden data-collection backend beyond the documented auth service
 
 Details: see [PRIVACY.md](PRIVACY.md).
 
