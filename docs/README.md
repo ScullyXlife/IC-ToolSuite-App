@@ -85,16 +85,6 @@ sudo apt -f install -y
 
 Use Settings → App Updates inside the app to check and install updates.
 
-## Release Automation (Maintainers)
-
-Release packaging and publishing are handled by GitHub Actions for maintainers.
-
-- Unified release workflow (desktop + mobile): [.github/workflows/release.yml](.github/workflows/release.yml)
-- Mobile preflight validation: [.github/workflows/mobile-preflight.yml](.github/workflows/mobile-preflight.yml)
-- Maintainer setup checklist: internal maintainer docs (private)
-
-This is maintainer release infrastructure, not an end-user/local build path.
-
 ## Nitrado Token Setup (Required)
 
 IC Tool Suite only needs a **single long-life Nitrado API token**.
@@ -133,39 +123,14 @@ In Settings → Nitrado Controller, choose an upload strategy:
 - **API:** force API upload
 - **FTP:** force FTP upload
 
-## Roadmap
-
-Roadmap and long-term direction:
-
-- [ROADMAP.md](ROADMAP.md)
-
 ## Support
 
 Discord support: https://discord.gg/nPugvHKhsk
 
-## Security + Privacy Transparency
+## Privacy + Security
 
-IC ToolSuite primarily runs locally, and now includes an IC account/auth backend for account registration, session management, and device linking.
-
-What it accesses:
-
-- Nitrado API + Nitrado file server endpoints (only when you connect a token and initiate actions)
-- GitHub release metadata (updater checks, depending on build/workflow)
-- IC ToolSuite auth service endpoints (account registration/sign-in/session/link actions)
-
-What it stores (local only):
-
-- Your app settings and any tokens/FTP settings you choose to save
-
-What it does NOT do:
-
-- No analytics/telemetry
-- No ads
-- No hidden data-collection backend beyond the documented auth service
-
-Details: see [PRIVACY.md](PRIVACY.md).
-
-More detail (architecture + data handling): see [SECURITY.md](SECURITY.md).
+- Privacy policy: [PRIVACY.md](PRIVACY.md)
+- Security/data handling: [SECURITY.md](SECURITY.md)
 
 ## Donations (Optional)
 
