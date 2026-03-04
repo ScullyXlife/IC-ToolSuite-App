@@ -18,7 +18,7 @@ Console DayZ admins are forced to:
 - Fight unreliable file uploads
 - Work around Nitrado quirks
 
-Iron Chronicle Tool Suite was built to fix that.
+Iron Chronicle Tool Suite was built to fix that. For Xbox and Playstation DayZ servers purchased and hosted through Nitrado.
 
 ## Core Capabilities (High-Level)
 
