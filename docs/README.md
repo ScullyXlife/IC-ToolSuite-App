@@ -61,12 +61,14 @@ Desktop stable and Android beta artifacts are both published from the same relea
 1. Download one of these files:
    - `IC.ToolSuite_*_x64-setup.exe` (NSIS)
    - `IC.ToolSuite_*_x64_en-US.msi` (MSI)
+   - `*_lite-map-sideload.exe` / `*_lite-map-sideload.msi` (Lite flavor, smaller installer)
 2. Run the installer and follow the prompts.
 3. If Windows SmartScreen warns you, choose "More info" then "Run anyway."
 
 ### Linux install (deb)
 
 1. Download `IC ToolSuite_*_amd64.deb` from the releases page.
+   - Lite flavor uses `*_lite-map-sideload.deb` and downloads tiled map packs on demand.
 2. Install it with:
 
 ```bash
@@ -84,6 +86,25 @@ sudo apt -f install -y
 ## Updates
 
 Use Settings → App Updates inside the app to check and install updates.
+
+## Build Workflows (Full + Lite)
+
+Default/full workflows are unchanged and continue bundling map assets in the app package.
+
+- Full dev: `npm run dev`
+- Full build: `npm run build`
+- Full signed build: `npm run build:signed`
+
+Lite workflows exclude bundled map tiles from `dist/` and use on-demand map pack install in map tools.
+
+- Lite dev: `npm run dev:lite`
+- Lite build: `npm run build:lite`
+- Lite signed build: `npm run build:signed:lite`
+
+Map pack release helpers:
+
+- Package map zips + update map manifest checksums/urls: `npm run maps:package`
+- Package tools bundle (lite variant): `npm run tools:package:lite`
 
 ## Nitrado Token Setup (Required)
 
