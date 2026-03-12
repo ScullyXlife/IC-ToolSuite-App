@@ -76,6 +76,13 @@ sudo dpkg -i "IC ToolSuite_*_amd64.deb"
 sudo apt -f install -y
 ```
 
+### Android beta (APK/AAB)
+
+1. Open the same releases page above.
+2. Download the latest Android beta asset (`.apk` and/or `.aab` when provided).
+3. Install on Android ARM64 devices.
+4. If installing an APK manually, allow install from unknown sources for the browser/file manager you used.
+
 ## Updates
 
 Use Settings → App Updates inside the app to check and install updates.
