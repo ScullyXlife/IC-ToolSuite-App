@@ -59,9 +59,8 @@ Desktop stable and Android beta artifacts are both published from the same relea
 ### Windows install
 
 1. Download one of these files:
-   - `IC.ToolSuite_*_x64-setup.exe` (NSIS)
-   - `IC.ToolSuite_*_x64_en-US.msi` (MSI)
-   - `*_lite-map-sideload.exe` / `*_lite-map-sideload.msi` (Lite flavor, smaller installer)
+   - `IC.ToolSuite_*_x64_en-US.msi` (Full)
+   - `*_lite-map-sideload.msi` (Lite flavor, smaller installer)
 2. Run the installer and follow the prompts.
 3. If Windows SmartScreen warns you, choose "More info" then "Run anyway."
 
