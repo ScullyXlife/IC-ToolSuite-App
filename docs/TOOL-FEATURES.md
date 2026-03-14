@@ -224,6 +224,17 @@ File: [tools/dayz-loadout-builder.html](tools/dayz-loadout-builder.html)
 - Copy/download generated JSON
 - Upload generated loadout JSON to mission `custom/` on Nitrado
 
+## NPC Builder
+
+File: [tools/dayz-npc-builder.html](tools/dayz-npc-builder.html)
+
+- Build linked NPC/survivor snippets for `types.xml`, `events.xml`, `cfgeventspawns.xml`, and `cfgspawnabletypes.xml`
+- Survivor model dropdown with synchronized NPC/event identity inputs
+- Parse and inject spawn positions, inventory item chances, and damage ranges
+- Add traceable reference comments above each injected snippet block
+- Per-file local load/edit/copy/download workflow
+- Per-file Nitrado download/upload workflow with optional path override inputs
+
 ## CfgLimitsDefinition Editor
 
 File: [tools/dayz-cfglimitsdefinition-editor.html](tools/dayz-cfglimitsdefinition-editor.html)
