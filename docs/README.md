@@ -24,6 +24,7 @@ Iron Chronicle Tool Suite was built to fix that.
 
 - Full Nitrado API integration (service-scoped long-life token)
 - Guided XML & JSON editors (guardrails + export + upload)
+- Dedicated Messages Editor for direct `messages.xml` editing with quick insert helpers
 - Drag-and-drop map visualizers (spawn points, event spawns, territories)
 - CE balancing surfaces (types, limits library, globals, spawnable types)
 - RPT log analysis (common pattern detection)
@@ -105,6 +106,7 @@ IC Tool Suite only needs a **single long-life Nitrado API token**.
 - For most operations you do **not** need FTP host/user/password in IC Tool Suite.
 - If Nitrado `file_server/upload` is unreliable for your service (common on some console servers), IC Tool Suite can use **FTP upload fallback**. Configure it in Settings → Nitrado Controller.
 - Add your token in Settings → Nitrado Tokens, then click Load Services and select your server.
+- In multi-service or multi-token setups, the app remembers token-to-service bindings to keep requests pinned to the correct stored token per service.
 
 On the Nitrado long-life token page, enable this scope:
 
