@@ -68,6 +68,15 @@ File: [tools/dayz-rpt-error-panel.html](tools/dayz-rpt-error-panel.html)
 - Search + severity filters
 - Pattern-based summary for common DayZ issues
 
+## Admin Log Reader
+
+File: [tools/admin-log-reader.html](tools/admin-log-reader.html)
+
+- Analyze local/pasted `.adm/.log/.txt` admin log content
+- Pull and scan `.adm` files from Nitrado directories
+- Group entries by player + category (locations/actions/emotes/placements)
+- Plot selected/filtered events on the mission map (Chernarus+, Livonia, Sakhal)
+
 ## Weather Configurator
 
 File: [tools/dayz-weather-configurator.html](tools/dayz-weather-configurator.html)
