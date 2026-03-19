@@ -80,24 +80,24 @@ sudo apt -f install -y
 
 Use Settings → App Updates inside the app to check and install updates.
 
-## Build Workflows (Full + Lite)
+## Build Workflows (Lite Only)
 
-Default/full workflows are unchanged and continue bundling map assets in the app package.
+Lite workflows are the default and exclude bundled map tiles from `dist/`; map tools install map packs on demand.
 
-- Full dev: `npm run dev`
-- Full build: `npm run build`
-- Full signed build: `npm run build:signed`
+- Dev: `npm run dev`
+- Build: `npm run build`
+- Signed build: `npm run build:signed`
 
-Lite workflows exclude bundled map tiles from `dist/` and use on-demand map pack install in map tools.
+Legacy full commands remain available only as explicit overrides.
 
-- Lite dev: `npm run dev:lite`
-- Lite build: `npm run build:lite`
-- Lite signed build: `npm run build:signed:lite`
+- Full dev override: `npm run dev:full`
+- Full build override: `npm run build:full`
+- Full signed build override: `npm run build:signed:full`
 
 Map pack release helpers:
 
 - Package map zips + update map manifest checksums/urls: `npm run maps:package`
-- Package tools bundle (lite variant): `npm run tools:package:lite`
+- Package tools bundle (lite default): `npm run tools:package`
 
 ## Nitrado Token Setup (Required)
 
